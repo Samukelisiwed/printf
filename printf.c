@@ -29,6 +29,7 @@ buffer[buff_ind++] = format[i];
 if (buff_ind == BUFF_SIZE)
 print_buffer(buffer, &buff_ind);
 /* write(1, &format[i], 1);*/
+
 printed_chars++;
 }
 else
@@ -48,7 +49,6 @@ printed_chars += printed;
 }
 
 print_buffer(buffer, &buff_ind);
-
 va_end(list);
 
 return (printed_chars);
@@ -61,6 +61,7 @@ return (printed_chars);
 */
 
 void print_buffer(char buffer[], int *buff_ind)
+
 {
 if (*buff_ind > 0)
 write(1, &buffer[0], *buff_ind);
