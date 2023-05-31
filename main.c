@@ -9,6 +9,7 @@
 */
 
 int main(void)
+
 {
 int len;
 int len2;
